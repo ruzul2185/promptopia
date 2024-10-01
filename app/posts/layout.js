@@ -1,8 +1,11 @@
 import react from 'react'
 
-const page = () => {
+const page = ({children}) => {
     return(
-        <h1>Navigate to the Top</h1>
+        <div>
+            <h1>Navigate to the Top</h1>
+            {children}
+        </div>
     )
 }
 

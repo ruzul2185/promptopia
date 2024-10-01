@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="new project created">
-      <change afterPath="$PROJECT_DIR$/app/posts/[postId]/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/new/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/page.js" afterDir="false" />
+    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/[postId]/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/[postId]/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +15,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2mozqlSyL4ndYI9eS3A3vAg5ibI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727757910255</updated>
       <workItem from="1727757912354" duration="3576000" />
-      <workItem from="1727775271898" duration="448000" />
+      <workItem from="1727775271898" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -65,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727758174313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="routing">
+      <created>1727776006681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727776006681</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +82,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new project created" />
-    <option name="LAST_COMMIT_MESSAGE" value="new project created" />
+    <MESSAGE value="routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="routing" />
   </component>
 </project>
