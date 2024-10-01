@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="SSR,SSG,ISG">
-      <change afterPath="$PROJECT_DIR$/app/api/users/route.js" afterDir="false" />
+    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="API endpoints">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/users/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/GeistMonoVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/GeistVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/[postId]/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/new/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DataFetching" />
+        <entry key="$PROJECT_DIR$" value="API_Endpoit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727757910255</updated>
       <workItem from="1727757912354" duration="3576000" />
-      <workItem from="1727775271898" duration="3419000" />
+      <workItem from="1727775271898" duration="7207000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -83,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727777428196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="API endpoints">
+      <created>1727779149887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727779149887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +119,7 @@
     <MESSAGE value="new project created" />
     <MESSAGE value="routing" />
     <MESSAGE value="SSR,SSG,ISG" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSR,SSG,ISG" />
+    <MESSAGE value="API endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="API endpoints" />
   </component>
 </project>
