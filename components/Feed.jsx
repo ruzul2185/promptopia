@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 
 import PromptCard from "@/components/PromptCard";
-import {use} from "bcrypt/promises";
+
 
 const PromptCardList = ({ data, handleTagClick }) => {
     return(

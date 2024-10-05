@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="Home Page created and nav bar made">
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/prompt/[id]/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/prompt/new/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/prompt/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/users/[id]/posts/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/create-prompt/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/profile/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/update-prompt/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/prompt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="basic tutorial completed">
+      <change afterPath="$PROJECT_DIR$/middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PromptCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PromptCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Provider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Provider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +66,8 @@
       <workItem from="1727775271898" duration="7350000" />
       <workItem from="1727807961261" duration="5906000" />
       <workItem from="1727852731824" duration="12098000" />
-      <workItem from="1727936738894" duration="8666000" />
+      <workItem from="1727936738894" duration="12829000" />
+      <workItem from="1728131603356" duration="2059000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -127,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727813161921</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="basic tutorial completed">
+      <created>1727955591899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727955591899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +131,7 @@
     <MESSAGE value="API endpoints" />
     <MESSAGE value="Home created" />
     <MESSAGE value="Home Page created and nav bar made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home Page created and nav bar made" />
+    <MESSAGE value="basic tutorial completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic tutorial completed" />
   </component>
 </project>
