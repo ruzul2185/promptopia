@@ -1,0 +1,18 @@
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>GOOGLE_ID=1056247550625-i5u9ufch1ebuiin9a44t25tvkl81nd9h.apps.googleusercontent.com\r\nGOOGLE_CLIENT_SECRET=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\r\nMONGODB_URI=mongodb+srv://ruzulchaure2185:ctSFQcBxouT5mCoD@cluster0.dnuky.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0\r\nNEXTAUTH_URL=http://localhost:3000\r\nNEXTAUTH_URL_INTERNAL=http://localhost:3000\r\nNEXTAUTH_SECRET=tjexz9h0IKCGyDgvDJXlz2oQVGlszWKIhIisaUrkpUE=
+===================================================================
+diff --git a/.env b/.env
+--- a/.env	
++++ b/.env	
+@@ -1,6 +1,6 @@
+ GOOGLE_ID=1056247550625-i5u9ufch1ebuiin9a44t25tvkl81nd9h.apps.googleusercontent.com
+ GOOGLE_CLIENT_SECRET=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
+ MONGODB_URI=mongodb+srv://ruzulchaure2185:ctSFQcBxouT5mCoD@cluster0.dnuky.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+-NEXTAUTH_URL=http://localhost:3000
+-NEXTAUTH_URL_INTERNAL=http://localhost:3000
++NEXTAUTH_URL=https://promptopia-green-eight.vercel.app/
++NEXTAUTH_URL_INTERNAL=https://promptopia-green-eight.vercel.app/
+ NEXTAUTH_SECRET=tjexz9h0IKCGyDgvDJXlz2oQVGlszWKIhIisaUrkpUE=
+\ No newline at end of file
