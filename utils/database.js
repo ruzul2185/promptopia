@@ -22,4 +22,4 @@ export const connectToDB = async() => {
     }
 }
 
-//This code might need updatetion according to mongodb atals
+//This code might need updatetion according to mongodb atlas
