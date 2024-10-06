@@ -21,3 +21,5 @@ export const connectToDB = async() => {
         console.log(error)
     }
 }
+
+//This code might need updatetion according to mongodb atals
