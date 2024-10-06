@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="Middleware for protected route implemented">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.js" afterDir="false" />
     </list>
@@ -69,7 +67,7 @@
       <workItem from="1727852731824" duration="12098000" />
       <workItem from="1727936738894" duration="12829000" />
       <workItem from="1728131603356" duration="2237000" />
-      <workItem from="1728227555776" duration="5554000" />
+      <workItem from="1728227555776" duration="5772000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -141,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728230210377</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="deployment">
+      <created>1728233700957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233700957</updated>
+    </task>
+    <task id="LOCAL-00012" summary="deployment">
+      <created>1728233775269</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233775269</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +168,7 @@
     <MESSAGE value="Home Page created and nav bar made" />
     <MESSAGE value="basic tutorial completed" />
     <MESSAGE value="Middleware for protected route implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Middleware for protected route implemented" />
+    <MESSAGE value="deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployment" />
   </component>
 </project>
