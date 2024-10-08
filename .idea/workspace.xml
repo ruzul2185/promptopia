@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="deployment">
+      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/auth.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +19,6 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="API_Endpoit" />
         <entry key="$PROJECT_DIR$" value="cour1" />
       </map>
     </option>
@@ -67,7 +69,9 @@
       <workItem from="1727852731824" duration="12098000" />
       <workItem from="1727936738894" duration="12829000" />
       <workItem from="1728131603356" duration="2237000" />
-      <workItem from="1728227555776" duration="5772000" />
+      <workItem from="1728227555776" duration="5924000" />
+      <workItem from="1728244661370" duration="1344000" />
+      <workItem from="1728354178035" duration="5071000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -153,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728233775269</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="deployment">
+      <created>1728233911076</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233911076</updated>
+    </task>
+    <task id="LOCAL-00014" summary="deployment">
+      <created>1728233914773</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233914773</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

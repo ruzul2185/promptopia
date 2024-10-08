@@ -3,15 +3,21 @@ import GoogleProvider from 'next-auth/providers/google'
 
 import User from '@/models/user'
 import { connectToDB } from "@/utils/database";
+import {authConfig} from "@/app/api/auth/[...nextauth]/auth.config";
 
 const handler = NextAuth({
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-
+            params: {
+                prompt: 'consent',
+                access_type: 'offline',
+                response_type: 'code',
+            }
         })
     ],
+    ...authConfig,
     callbacks:{
         async session({ session }) {
             const sessionUser = await User.findOne({
@@ -46,7 +52,6 @@ const handler = NextAuth({
             }
         }
     }
-
 })
 
 export { handler as GET, handler as POST }
