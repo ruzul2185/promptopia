@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-
+import '/app/layout.css'
 import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
 export const metadata = {
@@ -19,13 +19,40 @@ const RootLayout = ({ children }) => {
                         <Nav />
                         {children}
                     </main>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+                    <section className='promo-section'>
+                        <h1>Welcome to <span className="highlight">Promptopia</span></h1>
+                        <p>Join us and explore a vast collection of AI prompts, <strong>share your creations</strong>, and connect with a community of innovative thinkers.</p>
+
+                        <div className="promo-content">
+                            <div className="promo-block">
+                                <h2>Why Join Promptopia?</h2>
+                                <ul>
+                                    <li>Discover unique AI prompts that <strong>inspire creativity</strong> and boost productivity.</li>
+                                    <li>Share your own prompts and engage with our vibrant community.</li>
+                                    <li>Unlock your creative potential by exploring prompts tailored to your needs. Best AI prompt ideas for creativity</li>
+                                </ul>
+                            </div>
+
+                            <div className="promo-block">
+                                <h2>What You Can Do on Promptopia. Creative AI prompts for enhanced productivity</h2>
+                                <ul>
+                                    <li><strong>Create</strong>, <strong>share</strong>, and <strong>explore</strong> AI-driven prompts.</li>
+                                    <li>Engage with fellow users and expand your creative horizons. Share AI prompts for writing inspiration</li>
+                                    <li>Discover innovative AI prompts in the fields of writing, art, and productivity.</li>
+                                </ul>
+                            </div>
+
+                            <div className="promo-block">
+                                <h2>Join Our Community Today</h2>
+                                <p>Promptopia is the premier platform for AI prompt discovery and sharing. Whether you're looking to unlock new ideas, boost your productivity, or just explore, we have something for everyone! Unique AI prompts for artists and writers!</p>
+                                <p><em>Connect with like-minded individuals and expand your creative horizons with our curated prompts!</em></p>
+                            </div>
+                        </div>
+                    </section>
                 </Provider>
             </body>
         </html>
     )
 }
 
-export default RootLayout
+export default RootLayout;

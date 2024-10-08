@@ -1,0 +1,39 @@
+/* Centering the promo-section content */
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Takes the full height of the viewport */
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.promo-block {
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #f39c12; /* Change this to your theme color */
+    font-weight: bold;
+}
+
+/* For main app layout centering */
+
+
+
