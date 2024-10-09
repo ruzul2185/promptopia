@@ -1,5 +1,8 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+
 import PromptCard from "@/components/PromptCard";
-import {notFound} from "next/navigation";
 
 
 const PromptCardList = ({ data, handleTagClick }) => {
@@ -9,32 +12,48 @@ const PromptCardList = ({ data, handleTagClick }) => {
                 <PromptCard
                     key={post._id}
                     post={post}
+                    handleTagClick={handleTagClick}
                 />
             ))}
         </div>
     )
 }
 
-const getData = async() => {
-    const response = await fetch('http://localhost:3000/api/prompt')
-    if (!response){
-        return {
-            notFound: true
-        }
-    }
-    return await response.json()
-}
+const Feed = () => {
 
-const Feed = async () => {
-    const data = await getData()
+    const [searchText, setSearchText] = useState('');
+    const [posts, setPosts] = useState([]);
+
+    const handleSearchChange = (e) => {
+
+    }
+
+    useEffect(() => {
+        const fetchPosts = async() => {
+            const response = await fetch('/api/prompt')
+            const data = await response.json()
+
+            setPosts(data)
+        }
+
+        fetchPosts();
+    },[])
 
     return(
         <section className='feed'>
             <form className='relative w-full flex-center'>
+                <input
+                    type='text'
+                    placeholder='Search for a tag or a username'
+                    value={searchText}
+                    onChange={handleSearchChange}
+                    required={true}
+                    className='search_input peer'
+                />
             </form>
 
             <PromptCardList
-                data={data}
+                data={posts}
                 handleTagClick={()=>{}}
             />
         </section>
