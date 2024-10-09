@@ -1,19 +1,33 @@
+'use client'; // This marks the component as a Client Component
+
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Form from '@/components/Form';
 
-const EditPrompt = async ({ params }) => {
-    const promptId = params.id;
-
-    // Fetch the prompt data server-side
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/prompt/${promptId}`);
-    const data = await response.json();
-
+const EditPrompt = ({ params }) => {
+    const [submitting, setSubmitting] = useState(false);
     const [post, setPost] = useState({
-        prompt: data.prompt,
-        tag: data.tag
+        prompt: '',
+        tag: ''
     });
-
+    
+    const promptId = params.id;
     const router = useRouter();
+
+    useEffect(() => {
+        const getPromptDetails = async () => {
+            const response = await fetch(`/api/prompt/${promptId}`);
+            const data = await response.json();
+            setPost({
+                prompt: data.prompt,
+                tag: data.tag
+            });
+        };
+
+        if (promptId) {
+            getPromptDetails();
+        }
+    }, [promptId]);
 
     const updatePrompt = async (e) => {
         e.preventDefault();
@@ -54,6 +68,4 @@ const EditPrompt = async ({ params }) => {
     );
 };
 
-// Since we're in the `app` directory, the `params` are provided automatically.
-// You no longer need `getServerSideProps`.
 export default EditPrompt;
