@@ -1,52 +1,81 @@
-// app/update-prompt/page.jsx
-'use client';
+'use client'
 
-import { useState } from "react";
+import {Suspense, useEffect, useState} from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+
 import Form from '@/components/Form';
-import { useRouter } from 'next/navigation'; // Only use in Client Components
 
-// Fetch prompt details server-side
-const getPromptDetails = async (promptId) => {
-  const res = await fetch(`/api/prompt/${promptId}`, {
-    cache: 'force-cache', // Ensures data is fetched at build time
-  });
-  if (!res.ok) {
-    throw new Error('Failed to fetch prompt details');
-  }
-  return res.json();
-};
 
-const EditPrompt = async ({ params }) => {
-  const promptId = params.id;
-  let post;
+const EditPrompt = () => {
+    const [submitting, setSubmitting] = useState(false)
+    const [post, setPost] = useState({
+        prompt:'',
+        tag:''
+    })
+    const searchParams = useSearchParams()
+    const promptId = searchParams.get('id')
 
-  try {
-    post = await getPromptDetails(promptId);
-  } catch (error) {
-    return <p>Error loading prompt details.</p>;
-  }
+    useEffect(() => {
+        const getPromptDetails = async() => {
+            const response = await fetch(`/api/prompt/${promptId}`)
+            const data = await response.json()
+            setPost({
+                prompt: data.prompt,
+                tag: data.tag,
+            })
+        }
 
-  return (
-    <div>
-      <EditPromptForm initialPost={post} promptId={promptId} />
-    </div>
-  );
-};
+        if(promptId) {
+            getPromptDetails()
+        }
 
-// This function generates the static paths at build time
-export async function generateStaticParams() {
-  const res = await fetch(`/api/prompts`, {
-    cache: 'force-cache',
-  });
-  const prompts = await res.json();
+    },[promptId])
 
-  // Limit the number of static pages if there are too many
-  const limitedPrompts = prompts.slice(0, 100); // Example: statically generate first 100 prompts
+    const router = useRouter()
 
-  return limitedPrompts.map((prompt) => ({
-    id: prompt._id.toString(),
-  }));
+    const updatePrompt = async(e) => {
+        e.preventDefault()
+        setSubmitting(true)
+
+        if(!promptId) {
+            return alert('Prompt ID not found')
+        }
+
+        try{
+            const response = await fetch(`/api/prompt/${promptId}`,{
+                method:'PATCH',
+                body: JSON.stringify({
+                    prompt: post.prompt,
+                    tag: post.tag,
+                })
+            })
+            if (response.ok) {
+                router.push('/')
+            }
+        }catch(error) {
+            console.log(error)
+        }finally {
+            setSubmitting(false)
+        }
+    }
+
+    return (
+        <div>
+                <Form
+                    type='Edit'
+                    post={post}
+                    setPost={setPost}
+                    submitting={submitting}
+                    handleSubmit={updatePrompt}
+                />
+        </div>
+    )
 }
 
+const Page = () => {
+    return <Suspense>
+            <EditPrompt />
+            </Suspense>
+}
 
-export default EditPrompt;
+export default Page
