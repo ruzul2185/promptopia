@@ -1,18 +1,19 @@
-'use client';
-
-import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Form from '@/components/Form';
 
-const EditPrompt = ({ initialPrompt }) => {
-    const [submitting, setSubmitting] = useState(false);
+const EditPrompt = async ({ params }) => {
+    const promptId = params.id;
+
+    // Fetch the prompt data server-side
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/prompt/${promptId}`);
+    const data = await response.json();
+
     const [post, setPost] = useState({
-        prompt: initialPrompt.prompt,
-        tag: initialPrompt.tag
+        prompt: data.prompt,
+        tag: data.tag
     });
 
     const router = useRouter();
-    const { id: promptId } = router.query;
 
     const updatePrompt = async (e) => {
         e.preventDefault();
@@ -53,16 +54,6 @@ const EditPrompt = ({ initialPrompt }) => {
     );
 };
 
-export async function getServerSideProps(context) {
-    const { id } = context.query;
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/prompt/${id}`);
-    const data = await response.json();
-
-    return {
-        props: {
-            initialPrompt: data,
-        },
-    };
-}
-
+// Since we're in the `app` directory, the `params` are provided automatically.
+// You no longer need `getServerSideProps`.
 export default EditPrompt;
