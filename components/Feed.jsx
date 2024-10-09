@@ -1,4 +1,5 @@
 import PromptCard from "@/components/PromptCard";
+import {notFound} from "next/navigation";
 
 
 const PromptCardList = ({ data, handleTagClick }) => {
@@ -16,6 +17,11 @@ const PromptCardList = ({ data, handleTagClick }) => {
 
 const getData = async() => {
     const response = await fetch('http://localhost:3000/api/prompt')
+    if (!response){
+        return {
+            notFound: true
+        }
+    }
     return await response.json()
 }
 
