@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Promptopia',
     description: 'Discover & Share AI Prompts'
 }
-
+//content seo friendly added
 const RootLayout = ({ children }) => {
     return(
         <html lang='en' >
