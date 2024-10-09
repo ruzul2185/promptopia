@@ -3,7 +3,7 @@ import '/app/layout.css'
 import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
 export const metadata = {
-    title: 'Promptopia',
+    title: 'Promptopia ganesh technology solutions',
     description: 'Discover & Share AI Prompts'
 }
 //content seo friendly added
