@@ -1,6 +1,6 @@
-'use client'
+// 'use client'
 
-import { useState, useEffect } from 'react'
+// import {useEffect} from 'react'
 
 import PromptCard from "@/components/PromptCard";
 
@@ -12,32 +12,37 @@ const PromptCardList = ({ data, handleTagClick }) => {
                 <PromptCard
                     key={post._id}
                     post={post}
-                    handleTagClick={handleTagClick}
+                    // handleTagClick={handleTagClick}
                 />
             ))}
         </div>
     )
 }
 
-const Feed = () => {
+const getData = async()=>{
+    const response = await fetch('https://promptopia.ganeshtechnologysolutions.com/api/prompt')
+    return await response.json()
+}
 
-    const [searchText, setSearchText] = useState('');
-    const [posts, setPosts] = useState([]);
+const Feed = async() => {
+
+    // const [searchText, setSearchText] = useState('');
+    // const [posts, setPosts] = useState([]);
 
     const handleSearchChange = (e) => {
 
     }
-
-    useEffect(() => {
-        const fetchPosts = async() => {
-            const response = await fetch('/api/prompt')
-            const data = await response.json()
-
-            setPosts(data)
-        }
-
-        fetchPosts();
-    },[])
+    const data = await getData()
+    // useEffect(() => {
+    //     const fetchPosts = async() => {
+    //         const response = await fetch('/api/prompt')
+    //         const data = await response.json()
+    //
+    //         setPosts(data)
+    //     }
+    //
+    //     fetchPosts();
+    // },[])
 
     return(
         <section className='feed'>
@@ -45,15 +50,15 @@ const Feed = () => {
                 <input
                     type='text'
                     placeholder='Search for a tag or a username'
-                    value={searchText}
-                    onChange={handleSearchChange}
+                    // value={searchText}
+                    // onChange={handleSearchChange}
                     required={true}
                     className='search_input peer'
                 />
             </form>
 
             <PromptCardList
-                data={posts}
+                data={data}
                 handleTagClick={()=>{}}
             />
         </section>
