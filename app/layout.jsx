@@ -3,10 +3,10 @@ import '/app/layout.css'
 import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
 export const metadata = {
-    title: 'Promptopia',
+    title: 'Promptopia ganesh technology solutions',
     description: 'Discover & Share AI Prompts'
 }
-// seo content
+//content seo friendly added
 const RootLayout = ({ children }) => {
     return(
         <html lang='en' >
