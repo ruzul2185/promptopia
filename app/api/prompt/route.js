@@ -8,9 +8,15 @@ export async function GET(req) {
         await connectToDB();
         const prompts = await Prompt.find({}).populate('creator');
         console.log('Fetched prompts:', prompts.length); // Server-side log for debugging
-        return new Response(JSON.stringify(prompts), { status: 200 });
+        return new Response(JSON.stringify(prompts), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' },
+        });
     } catch (error) {
         console.error('Error fetching prompts:', error);
-        return new Response("Failed to fetch all prompts", { status: 500 });
+        return new Response("Failed to fetch all prompts", {
+            status: 500,
+            headers: { 'Content-Type': 'text/plain' },
+        });
     }
 }
