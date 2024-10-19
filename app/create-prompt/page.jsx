@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 import Form from '@/components/Form';
+import {revalidatePrompts} from "@/utils/action";
 
 
 const CreatePrompt = () => {
@@ -31,6 +32,7 @@ const CreatePrompt = () => {
                 })
             })
             if (response.ok) {
+                await revalidatePrompts();
                 router.push('/')
             }
         }catch(error) {

@@ -6,6 +6,20 @@ import { useSession } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 
 
+const PromptCardList = ({ data, handleTagClick }) => {
+    return(
+        <div className='mt-16 prompt_layout'>
+            {data.map((post) => (
+                <PromptCard
+                    key={post._id}
+                    post={post}
+                    handleTagClick={handleTagClick}
+                />
+            ))}
+        </div>
+    )
+}
+
 const PromptCard = ({ post, handleTagClick ,handleEdit, handleDelete }) => {
 
     const [copied, setCopied] =useState("")
@@ -78,4 +92,4 @@ const PromptCard = ({ post, handleTagClick ,handleEdit, handleDelete }) => {
     )
 }
 
-export default PromptCard
+export default PromptCardList
