@@ -24,7 +24,7 @@ const PromptCard = ({ post, handleTagClick ,handleEdit, handleDelete }) => {
 
     const [copied, setCopied] =useState("")
 
-    const { data: session } =useSession()
+    const { data: session } = useSession()
     const pathName = usePathname()
     const router = useRouter()
 
@@ -59,6 +59,7 @@ const PromptCard = ({ post, handleTagClick ,handleEdit, handleDelete }) => {
                         src={copied === post.prompt ? '/icons/tick.svg' : '/icons/copy.svg'}
                         width={12}
                         height={12}
+                        alt={''}
                     />
                 </div>
             </div>

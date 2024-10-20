@@ -5,7 +5,7 @@ import Input from '@/components/Input';
 
 const Feed = async() => {
 
-    const response = await fetch('http://localhost:3000/api/prompt',{cache:'no-store'})
+    const response = await fetch('http://localhost:3000/api/prompt')
     const data = await response.json()
 
     return(

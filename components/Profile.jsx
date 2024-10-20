@@ -1,6 +1,7 @@
+
 import PromptCard from "@/components/PromptCard";
 
-const Profile = ({ name, desc, data, handleDelete, handleEdit}) => {
+const Profile = async ({ name, desc, data, handleDelete, handleEdit}) => {
     return(
         <section className='w-full'>
             <h1 className='head_text text-left'>
