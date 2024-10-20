@@ -1,0 +1,1 @@
+export const url = 'https://promptopia-git-issue1-ruzul2185s-projects.vercel.app/'

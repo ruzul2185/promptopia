@@ -1,11 +1,12 @@
 
 import PromptCardList from "@/components/PromptCard";
 import Input from '@/components/Input';
+import {url} from "@/utils/urlconstant";
 
 
 const Feed = async() => {
 
-    const response = await fetch('http://localhost:3000/api/prompt')
+    const response = await fetch(`${url}api/prompt`)
     const data = await response.json()
 
     return(
