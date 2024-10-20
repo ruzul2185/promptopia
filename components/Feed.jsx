@@ -5,7 +5,7 @@ import Input from '@/components/Input';
 
 const Feed = async() => {
 
-    const response = await fetch(process.env.URL + 'api/prompt')
+    const response = await fetch(process.env.NEXTAUTH_URL + 'api/prompt')
     const data = await response.json()
 
     return(
