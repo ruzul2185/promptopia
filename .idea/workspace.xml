@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9728be33-b540-4aaa-a6de-8650827e6018" name="Changes" comment="revalidation done successfully">
-      <change afterPath="$PROJECT_DIR$/app/loading.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PromptCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PromptCard.jsx" afterDir="false" />
     </list>
@@ -75,7 +73,7 @@
       <workItem from="1728354178035" duration="5640000" />
       <workItem from="1728385545911" duration="212000" />
       <workItem from="1728487676289" duration="2412000" />
-      <workItem from="1729445726526" duration="1073000" />
+      <workItem from="1729445726526" duration="2300000" />
     </task>
     <task id="LOCAL-00001" summary="new project created">
       <created>1727758174313</created>
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729365091035</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="revalidation done successfully">
+      <created>1729446803772</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729446803772</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

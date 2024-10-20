@@ -1,5 +1,7 @@
 
+
 import PromptCard from "@/components/PromptCard";
+import PromptCardList from "@/components/PromptCard";
 
 const Profile = async ({ name, desc, data, handleDelete, handleEdit}) => {
     return(
@@ -12,14 +14,9 @@ const Profile = async ({ name, desc, data, handleDelete, handleEdit}) => {
             </p>
 
             <div className='mt-10 prompt_layout'>
-                {data.map((post) => (
-                    <PromptCard
-                        key={post._id}
-                        post={post}
-                        handleEdit={() => handleEdit && handleEdit(post)}
-                        handleDelete={() => handleDelete && handleDelete(post)}
+                    <PromptCardList
+                        data={data}
                     />
-                ))}
             </div>
         </section>
     )
