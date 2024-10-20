@@ -6,7 +6,7 @@ import {url} from "@/utils/urlconstant";
 
 const Feed = async() => {
 
-    const response = await fetch(`${url}api/prompt`)
+    const response = await fetch(`${url}/api/prompt`)
     const data = await response.json()
 
     return(
