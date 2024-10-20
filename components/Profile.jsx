@@ -12,12 +12,11 @@ const Profile = async ({ name, desc, data, handleDelete, handleEdit}) => {
             <p className='desc text-left'>
                 {desc}
             </p>
-
-            <div className='mt-10 prompt_layout'>
+            <section className='w-full flex-center flex-col'>
                     <PromptCardList
                         data={data}
                     />
-            </div>
+            </section>
         </section>
     )
 }
